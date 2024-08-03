@@ -22,6 +22,6 @@ The configuration directory is as follows:
 A single `config.toml` file is expected containing a list of commands. Here is an example:
 
 ```toml
-Hello = "echo hello"
+Hello = "echo Hello, World!"
 PingGoogle = "ping 8.8.8.8"
 ```

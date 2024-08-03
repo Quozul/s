@@ -575,6 +575,7 @@ dependencies = [
  "config",
  "confy",
  "inquire",
+ "serde",
 ]
 
 [[package]]
