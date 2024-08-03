@@ -1,0 +1,9 @@
+[package]
+name = "s"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+inquire = "0.7.5"
+config = "0.14.0"
+confy = "0.6.1"
