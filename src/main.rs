@@ -21,7 +21,8 @@ impl Default for MyConfig {
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let settings: MyConfig = confy::load("s", "config")?;
-    let options = settings.extra.keys().collect();
+    let mut options = settings.extra.keys().collect::<Vec<&String>>();
+    options.sort();
     let choice = Select::new("Select your quick command", options).prompt()?;
 
     if let Some(command) = settings.extra.get(choice) {
